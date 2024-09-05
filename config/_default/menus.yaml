@@ -15,9 +15,9 @@ main:
   - name: Services
     url: /#Services
     weight: 40
-  - name: Resources
-    weight: 50
-    hasChildren: true
-  - parent: Resources
-    name: Blog
-    url: blog/
+  # - name: Resources
+  #   weight: 50
+  #   hasChildren: true
+  # - parent: Resources
+  #   name: Blog
+  #   url: blog/

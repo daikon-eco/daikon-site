@@ -14,7 +14,7 @@ marketing:
     site_type: Person
     local_business_type: ''
     org_name: ''
-    description: 'A highly-customizable Hugo landing page theme powered by Hugo Blox website builder.'
+    description: ''
     twitter: 'GetResearchDev'
   analytics:
     google_analytics: ''
@@ -34,13 +34,13 @@ header:
     align: "center"
     fixed_to_top: true
     logo:
-      text: ""
+      text: "daikon"
       # Logo filename in `assets/media/` folder
-      filename: "daikon.png"
+      filename: "daikon.svg"
     button:
-      enable: true
-      text: "Get Started"
-      url: "https://hugoblox.com/templates/"
+      enable: false
+      text: "Let's talk!"
+      url: "/#contact"
     show_search: true
     show_theme_chooser: true
 
