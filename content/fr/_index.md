@@ -74,8 +74,8 @@ Avec **daikon**, nous avons pour ambition de briser ces barrières à travers de
           # Upload image to `assets/media/` and reference the filename here
           image: build-website.png
           button:
-            text: Découvrir
-            url: https://gladis.eco
+            text: Disponible bientôt
+            url: /#solutions
     design:
       # Section background color (CSS class)
       css_class: "bg-gray-100 dark:bg-gray-900"
