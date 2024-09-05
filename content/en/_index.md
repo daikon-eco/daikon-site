@@ -36,13 +36,13 @@ sections:
     id: manifest
     content:
       title: Manifest
-      text: "We are convinced that the current maturity of artificial intelligence technologies is sufficient to radically transform the architecture and construction sector.
+      text: "We believe that the current advancements in artificial intelligence are mature enough to radically transform the architecture and construction sector.
 
 
-The massive impact of AI in industries such as tech and finance is largely the result of collaboration between different players – sometimes competitors – around open-source projects and tools. Initiatives such as model hosting by [HuggingFace](https://huggingface.co), the creation of training datasets by [RedPajama](https://github.com/togethercomputer/RedPajama-Data), and the development of AI models like [Llama](https://llama.meta.com) and [Mistral](https://mistral.ai) are prime examples of this.
+The massive impact of AI in industries such as tech and finance is largely the result of collaboration between different players – sometimes competitors – around open-source projects and tools. Initiatives such as model hosting by [HuggingFace](https://huggingface.co), the creation of training datasets by [Together AI](https://www.together.ai/blog/redpajama-data-v2), and the development of AI models like [Llama](https://llama.meta.com) and [Mistral](https://mistral.ai) are prime examples of this.
 
 
-From our point of view, the slow adoption of AI in the AEC sector is primarily due to the compartmentalization between different actors – companies, engineering firms, and others – who are often reluctant to share their data and internal tools.
+From our point of view, the slow adoption of AI in the AEC industry is primarily due to the fragmentation between different actors – companies, engineering firms, and others – who are often reluctant to share their data and internal tools.
 
 
 With **daikon**, our ambition is to break down these barriers through clear objectives:

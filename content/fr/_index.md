@@ -39,7 +39,7 @@ sections:
       text: "Nous sommes convaincus que la maturité actuelle des technologies d’intelligence artificielle est suffisante pour transformer radicalement le secteur de l’architecture et de la construction.
 
 
-L’impact massif de l’IA dans des secteurs comme la tech et la finance est principalement le fruit de la collaboration entre différents acteurs – parfois concurrents – autour de projets et d’outils open source. Des initiatives comme l’hébergement de modèles par [HuggingFace](https://huggingface.co), la création de jeux de données d’entraînement avec [RedPajama](https://github.com/togethercomputer/RedPajama-Data), ou encore le développement de modèles d'IA tels que [Llama](https://llama.meta.com) et [Mistral](https://mistral.ai) en sont des exemples marquants.
+L’impact massif de l’IA dans des secteurs comme la tech et la finance est principalement le fruit de la collaboration entre différents acteurs – parfois concurrents – autour de projets et d’outils open source. Des initiatives comme l’hébergement de modèles par [HuggingFace](https://huggingface.co), la création de jeux de données d’entraînement avec [Together AI](https://www.together.ai/blog/redpajama-data-v2), ou encore le développement de modèles d'IA tels que [Llama](https://llama.meta.com) et [Mistral](https://mistral.ai) en sont des exemples marquants.
 
 
 De notre point de vue, la lente adoption de l’IA dans le secteur de la construction est principalement due au cloisonnement entre les différents acteurs – entreprises, bureaux d’études, et autres – qui sont peu enclins à partager leurs données et outils internes.
