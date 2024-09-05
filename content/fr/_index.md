@@ -75,7 +75,7 @@ Avec **daikon**, nous avons pour ambition de briser ces barrières à travers de
           image: build-website.png
           button:
             text: Disponible bientôt
-            url: /#solutions
+            url: /fr/#solutions
     design:
       # Section background color (CSS class)
       css_class: "bg-gray-100 dark:bg-gray-900"
