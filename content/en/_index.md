@@ -14,7 +14,7 @@ sections:
       text: Open-source **AI** for the **AEC** industry
       primary_action:
         text: GitHub
-        url: "https://github.com/orgs/daikon-eco/repositories"
+        url: "https://github.com/orgs/daikon-eco"
         icon: brands/github
       secondary_action:
         text: Solutions

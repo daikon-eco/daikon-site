@@ -14,7 +14,7 @@ sections:
       text: "**IA** open-source pour le secteur de l'**architecture** et de la **construction**"
       primary_action:
         text: GitHub
-        url: "https://github.com/orgs/daikon-eco/repositories"
+        url: "https://github.com/orgs/daikon-eco"
         icon: brands/github
       secondary_action:
         text: Solutions
