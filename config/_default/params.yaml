@@ -17,7 +17,7 @@ marketing:
     description: ''
     twitter: 'GetResearchDev'
   analytics:
-    google_analytics: ''
+    google_analytics: 'G-Z41P3E8PXG'
     baidu_tongji: ''
     plausible: ''
     fathom: ''
@@ -38,9 +38,9 @@ header:
       # Logo filename in `assets/media/` folder
       filename: "daikon.svg"
     button:
-      enable: false
+      enable: true
       text: "Let's talk!"
-      url: "/#contact"
+      url: "mailto:contact@daikon.eco"
     show_search: true
     show_theme_chooser: true
 

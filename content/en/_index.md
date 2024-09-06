@@ -58,7 +58,7 @@ With **daikon**, our ambition is to break down these barriers through clear obje
       css_class: "bg-gray-100 dark:bg-gray-900 justify-text"
       # Reduce spacing
       spacing:
-        padding: ["1rem", 0, "1rem", 0]
+        padding: ["1rem", "1rem", "1rem", "1rem"]
 
   - block: cta-image-paragraph
     id: solutions
