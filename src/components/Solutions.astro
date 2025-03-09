@@ -1,0 +1,84 @@
+---
+const solutions = [
+  {
+    title: "Gladis",
+    text: "The universal EPD search engine",
+    features: [
+      "A free web application to search for EPDs",
+      "EPDs from various Programme Operators: INIES, IBU, BRE Global, etc.",
+      "A modern API for developers",
+    ],
+    image: "/images/build-website.png",
+    button: {
+      text: "Coming soon",
+      url: "/#solutions",
+    },
+  },
+];
+---
+
+<section id="solutions" class="py-16 md:py-20">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-3xl mx-auto text-center mb-10 md:mb-12">
+      <h2
+        class="text-3xl md:text-4xl font-bold leading-tighter tracking-tighter mb-4 font-heading"
+      >
+        Solutions
+      </h2>
+      <p class="text-xl text-gray-600 dark:text-slate-400">
+        Innovative tools for the AEC industry
+      </p>
+    </div>
+
+    {
+      solutions.map((solution, index) => (
+        <div
+          class={`flex flex-col md:flex-row ${index % 2 === 1 ? "md:flex-row-reverse" : ""} gap-8 md:gap-12 items-center mb-16 last:mb-0`}
+        >
+          <div class="md:w-1/2">
+            <img
+              src={solution.image}
+              alt={solution.title}
+              class="w-full h-auto rounded-md shadow-lg"
+            />
+          </div>
+
+          <div class="md:w-1/2">
+            <h3 class="text-2xl font-bold mb-4">{solution.title}</h3>
+            <p class="text-lg text-gray-600 dark:text-slate-400 mb-6">
+              {solution.text}
+            </p>
+
+            <ul class="space-y-3 mb-8">
+              {solution.features.map((feature) => (
+                <li class="flex items-start">
+                  <div class="flex-shrink-0 mt-1">
+                    <svg
+                      class="h-5 w-5 text-primary-500 dark:text-primary-400"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </div>
+                  <span class="ml-3 text-gray-600 dark:text-slate-400">
+                    {feature}
+                  </span>
+                </li>
+              ))}
+            </ul>
+
+            <a href={solution.button.url} class="btn btn-primary">
+              {solution.button.text}
+            </a>
+          </div>
+        </div>
+      ))
+    }
+  </div>
+</section>

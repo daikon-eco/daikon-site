@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-sans: 'Inter';
+    --font-serif: var(--font-sans);
+    --font-heading: var(--font-sans);
+  }
+
+  html {
+    font-family: var(--font-sans), system-ui, sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white text-gray-900 dark:bg-slate-900 dark:text-slate-300;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  :focus-visible {
+    @apply outline-none ring-2 ring-offset-2 ring-primary-400 dark:ring-offset-slate-900;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center rounded-md border border-gray-400 bg-transparent px-6 py-3 text-center text-base font-medium leading-snug text-gray-700 shadow-md transition duration-200 ease-in hover:border-gray-600 hover:bg-gray-100 focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 focus:ring-offset-blue-200 dark:border-slate-500 dark:text-slate-300 dark:hover:border-slate-800 dark:hover:bg-slate-800 md:px-8;
+  }
+
+  .btn-primary {
+    @apply border-primary-600 bg-primary-600 text-white hover:border-primary-800 hover:bg-primary-800 hover:text-white dark:border-primary-700 dark:bg-primary-700 dark:text-white dark:hover:border-primary-900 dark:hover:bg-primary-900;
+  }
+
+  .btn-sm {
+    @apply px-5 py-2 text-sm md:px-6;
+  }
+
+  .btn-xs {
+    @apply px-3 py-1.5 text-xs md:px-4;
+  }
+
+  .btn-icon {
+    @apply flex h-10 w-10 items-center justify-center rounded-md border border-gray-400 bg-transparent text-center shadow-md transition duration-200 ease-in hover:border-gray-600 hover:bg-gray-100 focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 focus:ring-offset-blue-200 dark:border-slate-500 dark:text-slate-300 dark:hover:border-slate-800 dark:hover:bg-slate-800;
+  }
+
+  .btn-icon-sm {
+    @apply h-8 w-8;
+  }
+
+  .btn-icon-xs {
+    @apply h-6 w-6;
+  }
+}
