@@ -6,8 +6,7 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://daikon-eco.github.io',
-  base: '/daikon-site',
+  site: 'https://daikon.eco',
   integrations: [
     tailwind(),
     mdx(),
