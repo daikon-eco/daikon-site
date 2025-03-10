@@ -1,0 +1,37 @@
+---
+const stats = [
+  {
+    statistic: "500+",
+    description: "Clients servis dans le monde entier",
+  },
+  {
+    statistic: "95%",
+    description: "Taux de satisfaction client",
+  },
+  {
+    statistic: "24/7",
+    description: "Disponibilité du support et des services",
+  },
+];
+---
+
+<section class="py-8 sm:py-10 bg-primary-50 dark:bg-slate-800">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div
+      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 p-4 md:p-8"
+    >
+      {
+        stats.map((item) => (
+          <div class="text-center p-6 bg-white dark:bg-slate-900 rounded-lg shadow-md">
+            <p class="text-4xl lg:text-5xl font-bold text-primary-500 dark:text-primary-400">
+              {item.statistic}
+            </p>
+            <p class="mt-3 text-lg font-medium text-gray-600 dark:text-slate-400">
+              {item.description}
+            </p>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

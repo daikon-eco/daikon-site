@@ -8,9 +8,10 @@ interface Props {
   description?: string;
   image?: string;
   canonicalURL?: string;
+  lang?: string;
 }
 
-const { title, description, image, canonicalURL } = Astro.props;
+const { title, description, image, canonicalURL, lang = "en" } = Astro.props;
 ---
 
 <Layout
@@ -18,12 +19,13 @@ const { title, description, image, canonicalURL } = Astro.props;
   description={description}
   image={image}
   canonicalURL={canonicalURL}
+  lang={lang}
 >
-  <Header />
+  <Header lang={lang} />
 
   <main class="pt-8">
     <slot />
   </main>
 
-  <Footer />
+  <Footer lang={lang} />
 </Layout>
