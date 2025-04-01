@@ -201,31 +201,13 @@ const alternateUrl =
 </header>
 
 <script>
-  // Theme toggle functionality
+  const theme = localStorage.getItem("theme") || "light";
+  document.documentElement.classList.toggle("dark", theme === "dark");
+
   const handleThemeToggle = () => {
-    const htmlElement = document.documentElement;
-    htmlElement.classList.toggle("dark");
-
-    // Save the preference
-    localStorage.setItem(
-      "theme",
-      htmlElement.classList.contains("dark") ? "dark" : "light"
-    );
+    const isDark = document.documentElement.classList.toggle("dark");
+    localStorage.setItem("theme", isDark ? "dark" : "light");
   };
-
-  // Check for saved theme preference or use the system preference
-  const savedTheme =
-    localStorage.getItem("theme") ||
-    (window.matchMedia("(prefers-color-scheme: dark)").matches
-      ? "dark"
-      : "light");
-
-  // Apply the saved theme
-  if (savedTheme === "dark") {
-    document.documentElement.classList.add("dark");
-  } else {
-    document.documentElement.classList.remove("dark");
-  }
 
   // Mobile theme toggle
   const themeToggle = document.getElementById("theme-toggle");
