@@ -190,6 +190,7 @@ const alternateUrl =
           <a
             class="font-medium hover:text-gray-900 dark:hover:text-white px-4 py-3 flex items-center transition duration-150 ease-in-out"
             href={alternateUrl}
+            id="language-toggle"
           >
             {lang === "en" ? "FR" : "EN"}
           </a>
@@ -233,6 +234,15 @@ const alternateUrl =
   // Desktop theme toggle
   const themeToggleDesktop = document.getElementById("theme-toggle-desktop");
   themeToggleDesktop?.addEventListener("click", handleThemeToggle);
+
+  // Language toggle - update language preference when manually changing language
+  const languageToggle = document.getElementById("language-toggle");
+  languageToggle?.addEventListener("click", () => {
+    // Update to the opposite language of the current one
+    const currentLang = document.documentElement.lang;
+    const newLang = currentLang === "en" ? "fr" : "en";
+    localStorage.setItem("language_preference", newLang);
+  });
 
   // Mobile menu toggle
   const mobileMenuButton = document.getElementById("mobile-menu-button");

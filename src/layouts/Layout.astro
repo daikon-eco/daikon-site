@@ -52,6 +52,38 @@ const {
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@400;700&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Language Detection Script -->
+    <script is:inline>
+      (function () {
+        const currentPath = window.location.pathname;
+
+        if (!localStorage.getItem("language_preference")) {
+          if (currentPath.startsWith("/fr/")) {
+            localStorage.setItem("language_preference", "fr");
+            return;
+          }
+          // Check for French language preference in the browser
+          const userLanguages = navigator.languages || [
+            navigator.language || navigator.userLanguage,
+          ];
+          const prefersFrench = userLanguages.some((lang) =>
+            lang.toLowerCase().startsWith("fr")
+          );
+          const initialPreference = prefersFrench ? "fr" : "en";
+          localStorage.setItem("language_preference", initialPreference);
+          // Redirect to French version if preferred and on the root page
+          if (prefersFrench && (currentPath === "/" || currentPath === "")) {
+            window.location.href = "/fr/";
+          }
+        } else if (
+          (currentPath === "/" || currentPath === "") &&
+          localStorage.getItem("language_preference") === "fr"
+        ) {
+          window.location.href = "/fr/";
+        }
+      })();
+    </script>
   </head>
   <body
     class="antialiased text-gray-900 bg-white dark:bg-gray-900 dark:text-gray-100"
